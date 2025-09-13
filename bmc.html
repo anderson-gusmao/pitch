@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Business Model Canvas — Modelo</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--accent:#2563eb;--muted:#6b7280;--border:#e6eef8;--radius:10px;font-family:Inter, Roboto, -apple-system,'Segoe UI',Arial}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f1724}
+    .container{max-width:1200px;margin:28px auto;padding:20px}
+    header{display:flex;align-items:center;gap:16px;margin-bottom:14px}
+    .badge{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    h1{font-size:20px;margin:0}
+    p.lead{margin:4px 0 0;color:var(--muted);font-size:14px}
+
+    /* canvas grid */
+    .canvas{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:18px}
+    .row-1{grid-column:1/4;display:grid;grid-template-columns:1fr 2fr 1fr;gap:12px}
+    .row-2{grid-column:1/4;display:grid;grid-template-columns:1fr 2fr 1fr;gap:12px}
+
+    .box{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:12px;min-height:120px;display:flex;flex-direction:column}
+    .title{font-weight:700;font-size:13px;color:var(--accent);margin-bottom:8px}
+    .content{flex:1;font-size:14px;color:#0f1724}
+    .hint{font-size:12px;color:var(--muted);margin-top:8px}
+
+    /* specific sizes */
+    .partners{grid-column:1/2}
+    .activities{grid-column:2/3}
+    .resources{grid-column:3/4}
+    .value{grid-column:1/4;min-height:160px}
+
+    .relationships{grid-column:1/2}
+    .channels{grid-column:2/3}
+    .segments{grid-column:3/4}
+
+    .costs{grid-column:1/2}
+    .revenue{grid-column:3/4}
+
+    /* editable areas */
+    [contenteditable]{outline:none}
+    .placeholder{color:var(--muted)}
+
+    /* footer */
+    footer{margin-top:14px;color:var(--muted);font-size:13px;text-align:right}
+
+    @media (max-width:980px){.canvas{grid-template-columns:1fr}.row-1,.row-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="badge">BMC</div>
+      <div>
+        <h1>Business Model Canvas — Modelo</h1>
+        <p class="lead">Preencha cada bloco clicando e editando o conteúdo. Use este template para estruturar seu modelo de negócio.</p>
+      </div>
+    </header>
+
+    <div class="canvas">
+      <div class="row-1">
+        <div class="box partners" id="partners">
+          <div class="title">Parceiros-chave</div>
+          <div class="content" contenteditable="true"><div class="placeholder">Ex.: Fornecedores, parceiros estratégicos, alianças.</div></div>
+          <div class="hint">Quem são seus parceiros essenciais?</div>
+        </div>
+
+        <div class="box activities" id="activities">
+          <div class="title">Atividades-chave</div>
+          <div class="content" contenteditable="true"><div class="placeholder">Ex.: Desenvolvimento de produto, marketing, operações.</div></div>
+          <div class="hint">Quais atividades criam e entregam sua proposta de valor?</div>
+        </div>
+
+        <div class="box resources" id="resources">
+          <div class="title">Recursos-chave</div>
+          <div class="content" contenteditable="true"><div class="placeholder">Ex.: Equipe, tecnologia, IP, capital.</div></div>
+          <div class="hint">Quais recursos são críticos?</div>
+        </div>
+
+      </div>
+
+      <div class="box value" id="value">
+        <div class="title">Proposta de Valor</div>
+        <div class="content" contenteditable="true"><div class="placeholder">Ex.: Que problema você resolve? Quais necessidades atende? O que te diferencia?</div></div>
+        <div class="hint">A promessa de valor para seus clientes.</div>
+      </div>
+
+      <div class="row-2">
+        <div class="box relationships" id="relationships">
+          <div class="title">Relacionamento com Clientes</div>
+          <div class="content" contenteditable="true"><div class="placeholder">Ex.: Atendimento humano, self-service, comunidade, concierge.</div></div>
+          <div class="hint">Como você interage e retém clientes?</div>
+        </div>
+
+        <div class="box channels" id="channels">
+          <div class="title">Canais</div>
+          <div class="content" contenteditable="true"><div class="placeholder">Ex.: Website, app, parceiros de vendas, canais físicos.</div></div>
+          <div class="hint">Como o valor chega ao cliente?</div>
+        </div>
+
+        <div class="box segments" id="segments">
+          <div class="title">Segmentos de Clientes</div>
+          <div class="content" contenteditable="true"><div class="placeholder">Ex.: Personas, nichos, segmentos principais e secundários.</div></div>
+          <div class="hint">Para quem você cria valor?</div>
+        </div>
+
+      </div>
+
+      <div class="box costs" id="costs">
+        <div class="title">Estrutura de Custos</div>
+        <div class="content" contenteditable="true"><div class="placeholder">Ex.: Custos fixos, variáveis, custos de aquisição.</div></div>
+        <div class="hint">Quais são os custos mais significativos?</div>
+      </div>
+
+      <div style="grid-column:2/3"></div>
+
+      <div class="box revenue" id="revenue">
+        <div class="title">Fontes de Receita</div>
+        <div class="content" contenteditable="true"><div class="placeholder">Ex.: Venda direta, assinaturas, publicidade, comissões.</div></div>
+        <div class="hint">Como o negócio gera receita?</div>
+      </div>
+
+    </div>
+
+    <footer>
+      <small>Dica: pressione Ctrl/Cmd+P para salvar como PDF ou use o botão de impressão do navegador.</small>
+    </footer>
+  </div>
+
+</body>
+</html>
+
