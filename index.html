@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Mercado: Plataforma de Microlearning no Brasil</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 350px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+                max-height: 400px;
+            }
+        }
+        .kpi-card {
+            background-color: #CAF0F8;
+            border-left: 5px solid #0077B6;
+        }
+        .accent-bg { background-color: #0077B6; }
+        .accent-text { color: #0077B6; }
+        .highlight-text { color: #FFB703; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-black accent-text mb-4">A Revolução do Microlearning no Brasil</h1>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Uma análise da oportunidade estratégica para transformar a educação corporativa no ecossistema EdTech líder da América Latina.</p>
+        </header>
+
+        <main>
+            <section id="what-is-microlearning" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">O que é Microlearning?</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">É a entrega de conhecimento em pílulas focadas, de 3 a 7 minutos, projetadas para máxima retenção e aplicação imediata, combatendo a "curva do esquecimento".</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-extrabold highlight-text mb-3">50%</div>
+                        <h3 class="text-xl font-semibold mb-2">Aumento no Engajamento</h3>
+                        <p class="text-gray-600">Formatos interativos como vídeos e quizzes aumentam drasticamente a participação em comparação com métodos tradicionais.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-extrabold highlight-text mb-3">95%</div>
+                        <h3 class="text-xl font-semibold mb-2">Retenção com Vídeo</h3>
+                        <p class="text-gray-600">A taxa de retenção de mensagens em vídeo, um formato chave do microlearning, supera em muito a do texto (10%).</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <div class="text-5xl font-extrabold highlight-text mb-3">📱</div>
+                        <h3 class="text-xl font-semibold mb-2">Flexibilidade Total</h3>
+                        <p class="text-gray-600">O aprendizado "just-in-time" se encaixa perfeitamente na rotina, aproveitando pequenas pausas no dia a dia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="market-size" class="mb-16 bg-white p-8 rounded-lg shadow-lg">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Um Mercado em Crescimento Exponencial</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Impulsionado pela necessidade de qualificação contínua e pela transformação digital, o mercado global de microlearning apresenta uma trajetória de crescimento acelerado.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+                    <div class="md:col-span-3">
+                        <div class="chart-container mx-auto" style="max-width: 700px;">
+                            <canvas id="globalMarketChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 space-y-4">
+                        <div class="kpi-card p-4 rounded-md shadow-sm">
+                            <p class="text-sm text-gray-700">Taxa de Crescimento (CAGR)</p>
+                            <div class="text-3xl font-bold accent-text">22,31%</div>
+                            <p class="text-xs text-gray-500">Projeção mais otimista do setor</p>
+                        </div>
+                         <div class="kpi-card p-4 rounded-md shadow-sm">
+                            <p class="text-sm text-gray-700">Principal Impulsionador</p>
+                            <div class="text-3xl font-bold accent-text">Corporativo</div>
+                            <p class="text-xs text-gray-500">Upskilling e Reskilling da força de trabalho</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="brazil-opportunity" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Brasil: O Epicentro EdTech da América Latina</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">O país domina o cenário regional, mas sua infraestrutura digital desigual, combinada com a altíssima penetração de celulares, cria uma oportunidade única para soluções mobile-first.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-center mb-4">Domínio do Ecossistema EdTech (LATAM)</h3>
+                        <div class="chart-container" style="height:280px; max-height:300px;">
+                            <canvas id="edtechDonutChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold text-center mb-4">A Realidade Mobile-First do Brasil</h3>
+                        <div class="chart-container" style="height:280px; max-height:300px;">
+                            <canvas id="mobilePenetrationChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="blue-ocean" class="accent-bg text-white p-8 rounded-lg shadow-lg mb-16">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">A Oportunidade de Oceano Azul</h2>
+                    <p class="text-lg text-blue-100 max-w-3xl mx-auto mb-8">Há uma desconexão estratégica: o motor do microlearning global é o mercado B2B, mas o cenário EdTech brasileiro foca no B2C. Isso revela um mercado corporativo mal servido e pronto para ser conquistado.</p>
+                    <div class="bg-white/20 p-6 rounded-lg max-w-2xl mx-auto">
+                        <div class="chart-container" style="height: 250px;">
+                             <canvas id="marketFocusChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="competitors" class="mb-16">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Análise da Concorrência Local</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Três players principais disputam o mercado brasileiro, cada um com um posicionamento claro.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="border border-gray-200 bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold mb-2">Gupy EduCorp</h3>
+                        <p class="font-semibold accent-text mb-3">Grandes Empresas</p>
+                        <p class="text-gray-600">Diferencial em <span class="font-bold">gamificação intensiva</span> para impulsionar o engajamento dos colaboradores.</p>
+                    </div>
+                    <div class="border border-gray-200 bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold mb-2">UBITS</h3>
+                        <p class="font-semibold accent-text mb-3">América Latina</p>
+                        <p class="text-gray-600">Diferencial no <span class="font-bold">vasto catálogo de conteúdo em espanhol</span> e integração com RH.</p>
+                    </div>
+                    <div class="border border-gray-200 bg-white p-6 rounded-lg shadow-md text-center hover:shadow-xl transition-shadow">
+                        <h3 class="text-2xl font-bold mb-2">Grano</h3>
+                        <p class="font-semibold accent-text mb-3">PMEs e Educação</p>
+                        <p class="text-gray-600">Diferencial na <span class="font-bold">UX inspirada em redes sociais</span> (formato "stories").</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="strategy" class="mb-16">
+                 <div class="text-center mb-10">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-2">Recomendações Estratégicas para o Sucesso</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Um caminho claro para construir uma plataforma defensável e escalável no mercado brasileiro.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="md:flex items-center bg-white rounded-lg shadow-md p-6">
+                        <div class="text-4xl font-black accent-text mr-6 mb-4 md:mb-0">1</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Estratégia Mobile-First e Foco em Nicho B2B</h3>
+                            <p class="text-gray-600">Dominar um setor vertical (saúde, varejo, finanças) com conteúdo e funcionalidades hiper-relevantes, projetados primariamente para dispositivos móveis.</p>
+                        </div>
+                    </div>
+                    <div class="md:flex items-center bg-white rounded-lg shadow-md p-6">
+                        <div class="text-4xl font-black accent-text mr-6 mb-4 md:mb-0">2</div>
+                        <div>
+                            <h3 class="text-xl font-bold">UX "Semelhante a Redes Sociais"</h3>
+                            <p class="text-gray-600">Priorizar no MVP uma experiência de consumo de conteúdo viciante e intuitiva, que se destaque dos LMS corporativos tradicionais.</p>
+                        </div>
+                    </div>
+                    <div class="md:flex items-center bg-white rounded-lg shadow-md p-6">
+                        <div class="text-4xl font-black accent-text mr-6 mb-4 md:mb-0">3</div>
+                        <div>
+                            <h3 class="text-xl font-bold">Roteiro Centrado em Dados e IA</h3>
+                            <p class="text-gray-600">Evoluir de uma plataforma de entrega de conteúdo para um motor de inteligência de competências, gerando insights valiosos para as empresas.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center border-t pt-8 mt-12">
+            <p class="text-gray-500">Infográfico gerado com base na Análise de Mercado e Plano Estratégico para uma Plataforma de Microlearning.</p>
+        </footer>
+
+    </div>
+
+    <script>
+        (function() {
+            const FONT_COLOR = '#374151';
+            const GRID_COLOR = '#E5E7EB';
+            const PRIMARY_COLOR = '#0077B6';
+            const SECONDARY_COLOR = '#00B4D8';
+            const TERTIARY_COLOR = '#90E0EF';
+            const ACCENT_COLOR = '#FFB703';
+
+            const processLongLabels = (labels, maxLength = 16) => {
+                return labels.map(label => {
+                    if (typeof label !== 'string' || label.length <= maxLength) {
+                        return label;
+                    }
+                    const words = label.split(' ');
+                    const lines = [];
+                    let currentLine = '';
+                    for (const word of words) {
+                        if ((currentLine + ' ' + word).trim().length > maxLength) {
+                            lines.push(currentLine.trim());
+                            currentLine = word;
+                        } else {
+                            currentLine = (currentLine + ' ' + word).trim();
+                        }
+                    }
+                    if (currentLine) {
+                        lines.push(currentLine.trim());
+                    }
+                    return lines;
+                });
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                return Array.isArray(label) ? label.join(' ') : label;
+            };
+
+            const defaultChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: FONT_COLOR,
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        },
+                        bodyFont: {
+                           family: "'Inter', sans-serif"
+                        },
+                        titleFont: {
+                           family: "'Inter', sans-serif"
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        ticks: { color: FONT_COLOR },
+                        grid: { color: GRID_COLOR }
+                    },
+                    y: {
+                        ticks: { color: FONT_COLOR },
+                        grid: { color: GRID_COLOR }
+                    }
+                }
+            };
+            
+            const globalMarketCtx = document.getElementById('globalMarketChart');
+            if(globalMarketCtx) {
+                new Chart(globalMarketCtx, {
+                    type: 'line',
+                    data: {
+                        labels: ['2022', '2024', '2026', '2028', '2030', '2032'],
+                        datasets: [{
+                            label: 'Mercado Global (em Bilhões de USD)',
+                            data: [3.38, 5.7, 9.0, 14.2, 20.1, 25.36],
+                            borderColor: PRIMARY_COLOR,
+                            backgroundColor: 'rgba(0, 119, 182, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        ...defaultChartOptions,
+                        scales: {
+                             ...defaultChartOptions.scales,
+                             y: {
+                                ...defaultChartOptions.scales.y,
+                                beginAtZero: true
+                             }
+                        }
+                    }
+                });
+            }
+
+            const edtechDonutCtx = document.getElementById('edtechDonutChart');
+            if(edtechDonutCtx) {
+                new Chart(edtechDonutCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Startups EdTech no Brasil', 'Restante da América Latina'],
+                        datasets: [{
+                            label: '% do Total',
+                            data: [70, 30],
+                            backgroundColor: [PRIMARY_COLOR, TERTIARY_COLOR],
+                            borderColor: ['#FFFFFF'],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                             legend: { position: 'bottom', labels: { color: FONT_COLOR, font: { family: "'Inter', sans-serif" } } },
+                             tooltip: { callbacks: { title: tooltipTitleCallback } }
+                        }
+                    }
+                });
+            }
+            
+            const mobilePenetrationCtx = document.getElementById('mobilePenetrationChart');
+            if(mobilePenetrationCtx) {
+                new Chart(mobilePenetrationCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['População (+10 anos) com celular', 'Sem celular'],
+                        datasets: [{
+                            label: '% da População',
+                            data: [88.9, 11.1],
+                            backgroundColor: [SECONDARY_COLOR, GRID_COLOR],
+                             borderColor: ['#FFFFFF'],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                             legend: { position: 'bottom', labels: { color: FONT_COLOR, font: { family: "'Inter', sans-serif" } } },
+                             tooltip: { callbacks: { title: tooltipTitleCallback } }
+                        }
+                    }
+                });
+            }
+
+            const marketFocusCtx = document.getElementById('marketFocusChart');
+            if (marketFocusCtx) {
+                new Chart(marketFocusCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Foco do Mercado EdTech Brasileiro'],
+                        datasets: [
+                            {
+                                label: 'B2C (Consumidor)',
+                                data: [41.1],
+                                backgroundColor: TERTIARY_COLOR,
+                                borderWidth: 1,
+                                borderColor: PRIMARY_COLOR
+                            },
+                            {
+                                label: 'B2B (Corporativo - Oportunidade)',
+                                data: [100 - 41.1],
+                                backgroundColor: 'rgba(255, 183, 3, 0.2)',
+                                borderWidth: 1,
+                                borderColor: ACCENT_COLOR
+                            }
+                        ]
+                    },
+                    options: {
+                        indexAxis: 'y',
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            title: {
+                                display: true,
+                                text: 'Foco de Mercado: B2C vs. Oportunidade B2B',
+                                color: '#FFFFFF',
+                                font: { size: 16, family: "'Inter', sans-serif" }
+                            },
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                callbacks: {
+                                     title: tooltipTitleCallback,
+                                     label: function(context) {
+                                         let label = context.dataset.label || '';
+                                         if (label) {
+                                             label += ': ';
+                                         }
+                                         if (context.parsed.x !== null) {
+                                             if (label.includes('B2B')) {
+                                                 label = 'Oportunidade B2B mal servida';
+                                             } else {
+                                                 label += `${context.parsed.x}%`;
+                                             }
+                                         }
+                                         return label;
+                                     }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                stacked: true,
+                                display: false,
+                            },
+                            y: {
+                                stacked: true,
+                                display: false,
+                            }
+                        }
+                    }
+                });
+            }
+
+        })();
+    </script>
+</body>
+</html>
+
