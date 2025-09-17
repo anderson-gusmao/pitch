@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Guia para Iniciar sua Startup</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 20px;
+        }
+
+        header h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .phase {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            padding: 25px 30px;
+            border-left: 5px solid;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .phase:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .phase-header {
+            margin-bottom: 20px;
+        }
+
+        .phase-header h2 {
+            font-size: 1.8em;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .phase-header .icon {
+            font-size: 1.5em;
+            margin-right: 15px;
+            line-height: 1;
+        }
+        
+        .phase-header p {
+            font-style: italic;
+            color: #666;
+            margin: 5px 0 0 0;
+            font-weight: 300;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            border-top: 3px solid;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.3em;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card h3 .card-icon {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .card ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .card ul li {
+            margin-bottom: 10px;
+            line-height: 1.5;
+        }
+        
+        /* Phase Colors */
+        #phase1 { border-color: #ff9800; }
+        #phase1 .card { border-top-color: #ff9800; }
+        #phase1 h2 { color: #ff9800; }
+
+        #phase2 { border-color: #4CAF50; }
+        #phase2 .card { border-top-color: #4CAF50; }
+        #phase2 h2 { color: #4CAF50; }
+
+        #phase3 { border-color: #2196F3; }
+        #phase3 .card { border-top-color: #2196F3; }
+        #phase3 h2 { color: #2196F3; }
+
+        #phase4 { border-color: #9C27B0; }
+        #phase4 .card { border-top-color: #9C27B0; }
+        #phase4 h2 { color: #9C27B0; }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>O Caminho da Startup</h1>
+            <p>Um guia visual com as agendas, ações e conversas essenciais para direcionar sua iniciativa, fase a fase.</p>
+        </header>
+
+        <section class="phase" id="phase1">
+            <div class="phase-header">
+                <h2><span class="icon">💡</span>Fase 1: Ideação e Fundação</h2>
+                <p>Objetivo: Validar a ideia e alinhar a visão, o compromisso e as expectativas dos fundadores.</p>
+            </div>
+            <div class="content-grid">
+                <div class="card">
+                    <h3><span class="card-icon">📋</span>Agendas</h3>
+                    <ul>
+                        <li><strong>Alinhamento de Fundadores:</strong> Visão, missão, valores e divisão societária.</li>
+                        <li><strong>Definição de Sucesso:</strong> O que significa vencer ou falhar no primeiro ano?</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">⚡</span>Ações</h3>
+                    <ul>
+                        <li>Escrever o "Problem Statement".</li>
+                        <li>Criar a v1 do Lean Canvas.</li>
+                        <li>Mapear concorrentes iniciais.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">💬</span>Conversas</h3>
+                    <ul>
+                        <li><strong>Interna:</strong> Discussão honesta sobre comprometimento e medos.</li>
+                        <li><strong>Externa:</strong> Apresentar o <strong>problema</strong> (não a solução) para amigos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase" id="phase2">
+            <div class="phase-header">
+                <h2><span class="icon">🔍</span>Fase 2: Validação do Problema</h2>
+                <p>Objetivo: Provar que o problema é real e doloroso para um público específico.</p>
+            </div>
+            <div class="content-grid">
+                <div class="card">
+                    <h3><span class="card-icon">📋</span>Agendas</h3>
+                    <ul>
+                        <li><strong>Planejamento de Entrevistas:</strong> Definir persona e roteiro de perguntas abertas.</li>
+                        <li><strong>Síntese de Feedbacks:</strong> Compilar aprendizados e identificar padrões.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">⚡</span>Ações</h3>
+                    <ul>
+                        <li>Realizar 20-30 entrevistas com clientes.</li>
+                        <li>Construir protótipo de baixa fidelidade (desenhos, slides).</li>
+                        <li>Atualizar o Lean Canvas com dados reais.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">💬</span>Conversas</h3>
+                    <ul>
+                        <li><strong>Com Clientes:</strong> Foco em aprender, não vender. "Me conte sobre...".</li>
+                        <li><strong>Com Mentores:</strong> Apresentar aprendizados e pedir conselhos.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="phase" id="phase3">
+            <div class="phase-header">
+                <h2><span class="icon">🛠️</span>Fase 3: Construção do MVP</h2>
+                <p>Objetivo: Construir a versão mais simples do produto que resolve a dor principal dos primeiros usuários.</p>
+            </div>
+            <div class="content-grid">
+                <div class="card">
+                    <h3><span class="card-icon">📋</span>Agendas</h3>
+                    <ul>
+                        <li><strong>Definição de Escopo do MVP:</strong> Priorizar brutalmente a funcionalidade essencial.</li>
+                        <li><strong>Check-ins de Desenvolvimento:</strong> Acompanhamento de progresso e bloqueios.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">⚡</span>Ações</h3>
+                    <ul>
+                        <li>Desenvolver o MVP.</li>
+                        <li>Criar uma Landing Page para capturar interessados.</li>
+                        <li>Planejar como encontrar os primeiros 10 usuários.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">💬</span>Conversas</h3>
+                    <ul>
+                        <li><strong>Com "Design Partners":</strong> Mostrar o progresso e coletar feedback contínuo.</li>
+                        <li><strong>Interna:</strong> Manter o foco no escopo mínimo para evitar desvios.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="phase" id="phase4">
+            <div class="phase-header">
+                <h2><span class="icon">🚀</span>Fase 4: Lançamento e Tração</h2>
+                <p>Objetivo: Conseguir os primeiros usuários e iterar no produto buscando o "Product-Market Fit".</p>
+            </div>
+            <div class="content-grid">
+                <div class="card">
+                    <h3><span class="card-icon">📋</span>Agendas</h3>
+                    <ul>
+                        <li><strong>Reunião Semanal de Métricas:</strong> Analisar dados de uso e feedback qualitativo.</li>
+                        <li><strong>Priorização do Próximo Ciclo:</strong> Decidir a próxima melhoria com base em dados.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">⚡</span>Ações</h3>
+                    <ul>
+                        <li>Fazer onboarding manual dos primeiros usuários.</li>
+                        <li>Criar canais de comunicação direta (WhatsApp, etc).</li>
+                        <li>Implementar o ciclo: Construir > Medir > Aprender.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><span class="card-icon">💬</span>Conversas</h3>
+                    <ul>
+                        <li><strong>Com Usuários Ativos:</strong> "O que você mais ama? O que mais odeia?".</li>
+                        <li><strong>Com Usuários que Desistiram:</strong> "Por que você parou de usar?".</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2025 - Guia para Startups. Lembre-se: é uma maratona, não uma corrida de 100 metros.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
